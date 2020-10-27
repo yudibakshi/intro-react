@@ -29,6 +29,7 @@ class List extends React.Component {
       <div className="col-6 mx-auto">
         {/*Replace the code below to call the title prop*/}
         <p className="h2">{this.props.title}</p>
+				
         <form onSubmit={this.handleSubmit}>
           <label>
             <input
@@ -41,6 +42,7 @@ class List extends React.Component {
           </label>
           <input className="btn btn-sm" type="submit" value="Submit" />
         </form>
+
         <ul className="Box">
           <div className="Box-header">{this.props.title}</div>
           {this.props.currList.map((item, index) => (
